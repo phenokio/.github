@@ -1,0 +1,24 @@
+on:
+  workflow_call:
+    secrets:
+      sonar_token:
+        required: true
+      sonar_project_key:
+        required: true
+      sonar_organization:
+        required: true
+
+jobs:
+  sonar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run SonarCloud Analysis
+        uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          projectKey: ${{ secrets.sonar_project_key }}
+          organization: ${{ secrets.sonar_organization }}
+        env:
+          SONAR_TOKEN: ${{ secrets.sonar_token }}
