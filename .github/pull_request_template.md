@@ -1,12 +1,12 @@
 <!--
 PR 제목은 다음 형식을 따라주세요:
 [이슈 키] 작업 요약 제목
-예) [JIRA-456] 회원가입 API 오류 수정
+예) [SGGP-XXX] 회원가입 API 오류 수정
 -->
 
 ## Jira Issue
-<!-- 이슈 키와 링크를 작성해주세요 -->
-<!-- 예) [TEST-123](www.link-to-issue.com) -->
+<!-- 이슈 키와 url의 XXX만 티켓 넘버로 수정해주세요 -->
+<!-- 예) [SGGP-XXX](https://sugwangipi.atlassian.net/jira/software/projects/SGGP/boards/1?selectedIssue=SGGP-XXX) -->
 
 ## 작업 개요
 <!-- 전체적인 작업 목적 또는 변경 사항 요약 (한두 줄) -->
